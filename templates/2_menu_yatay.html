@@ -1,0 +1,69 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Big Brother 1984</title>
+
+    <style type="text/css">
+        .menu2 {
+            width: 600px;
+            height: 32px;
+            margin: 30px 0 0 0;
+            position: relative;
+            text-align: center;
+            left: 30%;
+
+        }
+
+        .menu2 ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+
+        }
+
+        .menu2 ul li {
+            float: left;
+        }
+
+        .menu2 ul li a {
+            display: block;
+            width: 125px;
+            height: 24px;
+            background: #c00;
+            color: #FFF;
+            font: bold 12px tohama;
+            text-decoration: none;
+            padding: 8px 0 0 5px;
+            text-align: center;
+        }
+
+        .menu2 ul li a:hover {
+            background: #FFF;
+            color: #c00;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="menu2">
+
+        <ul>
+            <li><a href="{{ url_for('kullanıcıkayıt') }}">Kullanıcı Kayıt</a></li>
+            <li><a href="{{ url_for('kamera1') }}">Kamera 1</a></li>
+            <li><a href="{{ url_for('kamera2') }}">Kamera 2</a></li>
+            <li><a href="{{ url_for('index') }}">xxxxxxxx</a></li>
+        </ul>
+
+    </div>
+    <div></div>
+    <img src="/static/bigbrother.png" alt="Big Brother"
+        style="width: 500px; height: 500px; position: absolute; top: -30px;z-index: -1; left: 30%;">
+
+</body>
+
+</html>

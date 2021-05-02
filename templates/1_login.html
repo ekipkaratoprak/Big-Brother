@@ -1,0 +1,38 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giriş</title>
+
+</head>
+
+<body>
+
+    <h2 style="text-align: center; margin-top: 5%; color: brown;">Giriş Yap</h2>
+    <br>
+    {% if hata1%}
+    <h2 style="text-align: center; margin-top: 5%; color: brown;">{{hata1}}</h2>
+    {% endif %}
+    {% if hata%}
+    <h2 style="text-align: center; margin-top: 5%; color: brown;">{{hata}}</h2>
+    {% else %}
+     <p>.<p>
+    {% endif %}
+
+    <form action="/menu" method="post">
+        <div style="text-align: center;">
+            <input type="text" name="username" placeholder="Kullanıcı Adı"><br /> <br>
+
+            <input type="password" name="pass" placeholder="Şifre"><br /> <br>
+
+            <button type="submit" style="color: brown; width: 150px;"> Giriş </button>
+
+        </div>
+    </form>
+
+
+</body>
+
+</html>
