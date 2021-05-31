@@ -26,10 +26,8 @@ class MongoDB:
 
         self.face_fs = gridfs.GridFS(self.face, "FACES")
 
-        if  not list(self.face.FACES.find({})):
+        if not list(self.face.FACES.files.find({})):
             self.add_image(TEST_USER, self.get_byte(TEST_FILE))
-            #coll.update(TEST_USER, data, upsert=True);
-            #self.face_fs.insert(TEST_USER, self.get_byte(TEST_FILE),upsert=True)
 
         self.yetkisis_fs = gridfs.GridFS(self.yetkisiz, "YETKISIZ")
 
