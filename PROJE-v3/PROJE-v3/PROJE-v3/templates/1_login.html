@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Giriş</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="w3-container w3-light-grey w3-container w3-center">
+        <h2 style="text-shadow: 1px 1px 0 #444">GİRİŞ YAP</h2>
+    </div>
+    <br />
+    {% if hata1%}
+    <h2 style="text-align: center; margin-top: 5%; color: brown">{{hata1}}</h2>
+    {% endif %} {% if hata%}
+    <h2 style="text-align: center; margin-top: 5%; color: brown">{{hata}}</h2>
+    {% else %}
+    <p>.</p>
+    <p>{% endif %}</p>
+
+    <form action="/menu" method="post" class="w3-container w3-center">
+        <input type="text"
+               name="username"
+               class="w3-input w3-center"
+               placeholder="Kullanıcı Adı" /><br />
+        <br />
+
+        <input type="password"
+               name="pass"
+               class="w3-input w3-center"
+               placeholder="Şifre" /><br />
+        <br />
+
+        <button class="w3-button w3-black w3-section" type="submit">
+            <i class="fa fa-paper-plane"></i> GİRİŞ
+        </button>
+    </form>
+</body>
+</html>
